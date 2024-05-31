@@ -1,0 +1,273 @@
+#about,
+#projects,
+#journey,
+#thankyou {
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../images/MyImage.jpeg') no-repeat center center/cover;
+}
+
+.welcome-message {
+  position: absolute;
+  left: -20%;
+  top: 50%;
+  transform: translateY(-30%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 30px;
+  width: auto;
+}
+
+#about h2 {
+  font-size: 32px;
+  font-family: 'YourDesiredFont', sans-serif;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 20px;
+  font-family: 'YourDesiredFont', Times new roman;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding-top: 50px;
+  background: #ffffff;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #ffffff 50%, #ff0000 50%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-link.active {
+  color: #ff0000;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  font-size: 24px;
+  color: #ff0000;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.btn-secondary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-secondary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.skill-icon {
+  font-size: 36px;
+  color: #d63384;
+  margin: 10px;
+}
+
+.modal-footer .skill-icon {
+  font-size: 24px;
+}
+
+.background-skills-left,
+.background-skills-right {
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: -1;
+}
+
+.background-skills-left {
+  left: 10px;
+}
+
+.background-skills-right {
+  right: 10px;
+}
+
+.background-skills-left .col,
+.background-skills-right .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-github {
+  color: #fff;
+  background-color: #333;
+  border-color: #333;
+}
+
+.btn-github:hover {
+  color: #fff;
+  background-color: #24292e;
+  border-color: #1b1f23;
+}
+
+.btn-website {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-website:hover {
+  color: #fff;
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.project-card {
+  height: 100%;
+}
+
+.project-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.infographic {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.infographic h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.infographic-item {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.infographic-item:last-child {
+  margin-bottom: 0;
+}
+
+.infographic-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #007bff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.infographic-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.infographic-content h3 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.infographic-content p {
+  margin-bottom: 0;
+}
+
+.infographic-date {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.infographic-content h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #555;
+}
