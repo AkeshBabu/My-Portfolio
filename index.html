@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
 
 <head>
   <meta charset="UTF-8">
@@ -9,326 +7,30 @@
   <title>Akesh Anumalasetty's Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <style>
-    #about,
-    #projects,
-    #journey,
-    #thankyou {
-      padding-top: 80px;
-      margin-top: -80px;
-    }
-
-    .profile-pic {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      border: 5px solid #fff;
-      position: absolute;
-      left: 10%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    header {
-      position: relative;
-      height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: url('images/MyImage.jpeg') no-repeat center center/cover;
-    }
-
-
-    .welcome-message {
-      position: absolute;
-      left: -20%;
-      top: 50%;
-      transform: translateY(-30%);
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 10px;
-      border-radius: 30px;
-      width: auto;
-    }
-
-    #about h2 {
-      font-size: 32px;
-      font-family: 'YourDesiredFont', sans-serif;
-      margin-bottom: 20px;
-    }
-
-    #about p {
-      font-size: 20px;
-      font-family: 'YourDesiredFont', Times new roman;
-      line-height: 1.6;
-      margin-bottom: 10px;
-    }
-
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding-top: 50px;
-      background: #ffffff;
-      color: #333;
-      scroll-behavior: smooth;
-    }
-
-    .navbar {
-      background-color: #343a40;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .navbar-brand,
-    .nav-link {
-      color: #fff;
-      font-weight: bold;
-    }
-
-    .nav-link.active {
-      color: #ffd700;
-    }
-
-    .navbar-toggler {
-      border: none;
-    }
-
-    .navbar-toggler-icon {
-      color: #fff;
-    }
-
-    .container {
-      max-width: 960px;
-    }
-
-    .social-icons a {
-      margin-right: 15px;
-      font-size: 24px;
-      color: #6c757d;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px 0;
-      background-color: #343a40;
-      color: #fff;
-    }
-
-    .card-img-top {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-
-    .btn-secondary {
-      background-color: #007bff;
-      border-color: #007bff;
-    }
-
-    .btn-secondary:hover {
-      background-color: #0056b3;
-      border-color: #004085;
-    }
-
-    .skill-icon {
-      font-size: 36px;
-      color: #d63384;
-      margin: 10px;
-    }
-
-    .modal-footer .skill-icon {
-      font-size: 24px;
-    }
-
-    .background-skills-left,
-    .background-skills-right {
-      position: fixed;
-      top: 100px;
-      bottom: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      z-index: -1;
-    }
-
-    .background-skills-left {
-      left: 10px;
-    }
-
-    .background-skills-right {
-      right: 10px;
-    }
-
-    .background-skills-left .col,
-    .background-skills-right .col {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .btn-github {
-      color: #fff;
-      background-color: #333;
-      border-color: #333;
-    }
-
-    .btn-github:hover {
-      color: #fff;
-      background-color: #24292e;
-      border-color: #1b1f23;
-    }
-
-    .btn-website {
-      color: #fff;
-      background-color: #007bff;
-      border-color: #007bff;
-    }
-
-    .btn-website:hover {
-      color: #fff;
-      background-color: #0056b3;
-      border-color: #004085;
-    }
-
-    .project-card {
-      height: 100%;
-    }
-
-    .project-card .card-body {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .btn-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 10px;
-    }
-
-   
-   
-
-    .year {
-      font-size: 16px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .description {
-      display: none;
-      background: rgba(0, 0, 0, 0.8);
-      color: #fff;
-      padding: 10px;
-      border-radius: 5px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-      font-size: 14px;
-      width: 200px;
-      position: absolute;
-      top: 80px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 3;
-      white-space: normal;
-    }
-
-   
-
-    
-   
-    .infographic {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: #f9f9f9;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .infographic h2 {
-      margin-bottom: 30px;
-      font-size: 32px;
-    }
-
-    .infographic-item {
-      width: 80%;
-      display: flex;
-      align-items: center;
-      margin-bottom: 40px;
-      position: relative;
-    }
-
-    .infographic-item:last-child {
-      margin-bottom: 0;
-    }
-
-    .infographic-icon {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background: #007bff;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      position: relative;
-      z-index: 1;
-      flex-shrink: 0;
-    }
-
-    .infographic-content {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      flex-grow: 1;
-      margin-left: 20px;
-    }
-
-    .infographic-content h3 {
-      margin-top: 0;
-      font-size: 24px;
-    }
-
-    .infographic-content p {
-      margin-bottom: 0;
-    }
-
-    .infographic-date {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 0;
-      font-size: 16px;
-      font-weight: bold;
-      color: #333;
-    }
-
-    .infographic-content h4 {
-      margin: 0;
-      font-size: 18px;
-      color: #555;
-    }
-  </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RY51EWQG69"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RY51EWQG69');
-</script>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RY51EWQG69"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RY51EWQG69');
+  </script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("sSQt2hAkipDY9E62p"); // Replace with your actual Public Key from EmailJS
+    })();
+  </script>
 </head>
 
 <body>
+
+
   <!-- Skill icons fixed to the left and right of the screen -->
   <div class="background-skills-left">
     <div class="col">
+
       <i class="fab fa-java skill-icon" style="color: #007396;" title="Java"></i>
       <i class="fab fa-html5 skill-icon" style="color: #e34c26;" title="HTML5"></i>
       <i class="fab fa-css3-alt skill-icon" style="color: #264de4;" title="CSS3"></i>
@@ -340,6 +42,7 @@
       <i class="fab fa-bootstrap skill-icon" style="color: #563d7c;" title="Bootstrap"></i>
       <i class="fas fa-database skill-icon" style="color: #00758f;" title="MySQL"></i>
       <i class="fab fa-php skill-icon" style="color: #777bb4;" title="PHP"></i>
+      <i class="fab fa-git skill-icon" style="color: #f34f29;" title="Git"></i>
     </div>
   </div>
 
@@ -351,15 +54,18 @@
       <i class="fab fa-github skill-icon" style="color: #4078c0;" title="GitHub"></i>
       <i class="fab fa-docker skill-icon" style="color: #2496ed;" title="Docker"></i>
       <i class="fab fa-jenkins skill-icon" style="color: #d24939;" title="Jenkins"></i>
-      <i class="fab fa-git skill-icon" style="color: #f34f29;" title="Git"></i>
       <i class="fab fa-linux skill-icon" style="color: #fcc624;" title="Linux"></i>
       <i class="fas fa-database skill-icon" style="color: #D82C20;" title="Redis"></i>
-      <i class="fab fa-spring skill-icon" style="color: #6DB33F;" title="Spring Boot"></i>
-      <i class="fas fa-stream skill-icon" style="color: #231F20;" title="Apache Kafka"></i>
+      <i class="fas fa-seedling skill-icon" style="color: #6DB33F;" title="Spring Boot"></i>
       <i class="fas fa-robot skill-icon" style="color: #7362D8;" title="AI/ML"></i>
+      <i class="fab fa-figma skill-icon" style="color: #f24e1e;" title="Figma"></i>
+      <i class="fas fa-exchange-alt skill-icon" style="color: #000000;" title="API"></i>
+
     </div>
   </div>
 
+
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">Akesh Anumalasetty</a>
@@ -367,8 +73,7 @@
         <a href="https://linkedin.com/in/akeshbabu" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/akeshbabu" target="_blank"><i class="fab fa-github"></i></a>
         <a href="mailto:anumalasettyakesh@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="Resume_2.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
-
+        <a href="/documents/AkeshAnumalasettyResume.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -385,143 +90,297 @@
           <li class="nav-item">
             <a class="nav-link" href="#journey">Journey</a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+
+
+  <!-- Header -->
   <header class="text-center py-5 position-relative" id="home">
     <div class="container position-relative">
       <div class="welcome-message position-absolute z-index-2">
         <h1>Hello! I am <span style="color: #ff000; font-weight: bold;">Akesh</span> </h1>
         <h2>Welcome to My Portfolio</h2>
-        <p>Explore my projects and get to know my professional journey. Dive into my world of innovation and creativity
+        <p>Explore my projects and get to know my professional journey. Dive into my world of innovation and
+          creativity
           where technology meets excellence.</p>
       </div>
     </div>
   </header>
 
-  <div id="about" class="container mt-5">
+  <!-- Your Home content here -->
 
-    <h2 class="text-center mb-4">About Me</h2>
 
-    <p>I am Akesh Anumalasetty, a dedicated software developer with over four years of professional experience, known
-      for
-      delivering innovative solutions across diverse technology platforms. After earning my degree in Electronics and
-      Communication Engineering, I shifted my focus to software development, where I have successfully led and
-      implemented
-      multiple high-impact projects in areas like risk investigation, e-commerce, and real-time data applications.</p>
-    <p>My career has been marked by a demonstrated ability to adapt to new technologies and complex project demands,
-      leveraging my strong analytical skills to solve problems and optimize solutions. I thrive in team settings,
-      driving
-      project success through effective collaboration and a commitment to excellence in all aspects of software
-      development. My technical proficiency spans several programming languages and platforms, including Java,
-      JavaScript,
-      React, and various cloud technologies.</p>
-  </div>
-  <div id="journey" class="container mt-5">
+  <!-- About -->
+  <section id="about">
+    <!-- Your About content here -->
+    <div id="about" class="container mt-5">
+      <h2 class="text-center mb-4">About Me</h2>
+      <p>A dedicated <strong>software developer</strong> with over five years of professional experience,
+        known for delivering <strong>innovative solutions</strong> across diverse technology platforms. After earning a
+        degree in Electronics and Communication Engineering, the focus shifted to <strong>software
+          development</strong>, successfully leading and implementing multiple high-impact projects in areas like
+        <strong>risk investigation</strong>, <strong>e-commerce</strong>, and <strong>real-time data
+          applications</strong>.
+      </p>
 
-    <h2 class="text-center mb-4">Journey</h2>
-    <div id="journey" class="infographic mt-5 pt-5">
+      <p>The career has been marked by a demonstrated ability to adapt to new technologies and complex project demands,
+        leveraging strong <strong>analytical skills</strong> to solve problems and optimize solutions. Thriving in team
+        settings, driving project success through effective <strong>collaboration</strong> and a commitment to
+        <strong>excellence</strong> in all aspects of software development.Technical proficiency spans
+        several programming languages and platforms, including <strong>Java</strong>, <strong>JavaScript</strong>,
+        <strong>React</strong>, and various <strong>cloud technologies</strong>.
+      </p>
+    </div>
 
-      <div class="infographic-item">
-        <div class="infographic-icon">
-          <i class="fas fa-graduation-cap"></i>
-        </div>
-        <div class="infographic-content">
-          <h3>Bachelors in JNTUA</h3>
-          <h4>2015-2019</h4>
-          <p>Completed my Bachelors in ECE at JNTUA, India, gaining a solid foundation in engineering principles.</p>
-        </div>
-      </div>
-      <div class="infographic-item">
-        <div class="infographic-icon">
-          <i class="fas fa-briefcase"></i>
-        </div>
-        <div class="infographic-content">
-          <h3>Intern at Bosch</h3>
-          <h4>2018</h4>
-          <p>Interned at Robert Bosch, gaining valuable professional and software development experience.</p>
-        </div>
-      </div>
-      <div class="infographic-item">
-        <div class="infographic-icon">
-          <i class="fas fa-user-tie"></i>
-        </div>
-        <div class="infographic-content">
-          <h3>SDE Intern at Amazon</h3>
-          <h4>2019</h4>
-          <p>Embarked on a career at Amazon as a Software Development Engineer (SDE) Intern, cultivated foundational
-            expertise in advanced software engineering techniques.
-            .</p>
-        </div>
-      </div>
-      <div class="infographic-item">
-        <div class="infographic-icon">
-          <i class="fas fa-user-tie"></i>
-        </div>
-        <div class="infographic-content">
-          <h3>SDE at Amazon</h3>
-          <h4>2019-2023</h4>
-          <p>Served as a Software Development Engineer at Amazon, concentrating on the development of software
-            solutions.
-          </p>
-        </div>
-      </div>
-      <div class="infographic-item">
-        <div class="infographic-icon">
-          <i class="fas fa-graduation-cap"></i>
-        </div>
-        <div class="infographic-content">
-          <h3>Masters at University of Utah</h3>
-          <h4>2023-2024</h4>
-          <p>Pursuing a Master's in Information Systems at the University of Utah, engaging in projects and networking.
-          </p>
-        </div>
-      </div>
-      <div class="infographic-item">
-        <div class="infographic-icon">
-          <i class="fas fa-chalkboard-teacher"></i>
-        </div>
-        <div class="infographic-content">
-          <h3>Graduate Assistant for Business School</h3>
-          <h4>2024</h4>
-          <p>Assisting the Business School as a Graduate Assistant, contributing to various academic and administrative
-            tasks.</p>
-        </div>
-      </div>
-      <div class="infographic-item">
-        <div class="infographic-icon">
-          <i class="fas fa-user-graduate"></i>
-        </div>
-        <div class="infographic-content">
-          <h3>IS Graduate Ambassador</h3>
-          <h4>2024</h4>
-          <p>Representing the Information Systems program as a Graduate Ambassador, helping to promote the program and
-            assist prospective students.</p>
+  </section>
+
+
+  <!-- Journey -->
+
+  <section id="journey">
+    <!-- Your Journey content here -->
+    <div id="journey" class="container mt-5">
+      <h2 class="text-center mb-4">Journey</h2>
+      <div class="infographic mt-5 pt-5">
+        <div class="timeline">
+          <div class="infographic-item timeline-item-left">
+            <div class="infographic-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="infographic-content">
+              <h3>Masters at University of Utah</h3>
+              <h4>Utah (USA), 2023-2024</h4>
+              <p>Engaging in cutting-edge projects and building a professional network within the field of Information
+                Systems.</p>
+            </div>
+          </div>
+          <div class="infographic-item timeline-item-right">
+            <div class="infographic-icon">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <div class="infographic-content">
+              <h3>Graduate Assistant for Business School</h3>
+              <h4>Utah (USA), 2024</h4>
+              <p>Providing academic support and contributing to key administrative initiatives at the Business School.
+              </p>
+            </div>
+          </div>
+          <div class="infographic-item timeline-item-right">
+            <div class="infographic-icon">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <div class="infographic-content">
+              <h3>IS Graduate Ambassador</h3>
+              <h4>Utah (USA), 2024</h4>
+              <p>Promoting the Information Systems program and guiding prospective students through their
+                decision-making
+                process.</p>
+            </div>
+          </div>
+          <div class="infographic-item timeline-item-right">
+            <div class="infographic-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="infographic-content">
+              <h3>SDE, Amazon</h3>
+              <h4>Hyderabad (IN), 2019-2023</h4>
+              <p>Specialized in the design and development of innovative software solutions, driving major project
+                success.</p>
+            </div>
+          </div>
+          <div class="infographic-item timeline-item-right">
+            <div class="infographic-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="infographic-content">
+              <h3>SDE Intern, Amazon</h3>
+              <h4>Hyderabad (IN), 2019</h4>
+              <p>Gained in-depth experience in software engineering, focusing on advanced development techniques and
+                best
+                practices.</p>
+            </div>
+          </div>
+
+          <div class="infographic-item timeline-item-right">
+            <div class="infographic-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="infographic-content">
+              <h3>Student Intern, Robert Bosch</h3>
+              <h4>Bangalore (IN), 2018</h4>
+              <p>Enhanced software development skills through practical experience in a professional setting at Robert
+                Bosch.</p>
+            </div>
+          </div>
+
+          <div class="infographic-item timeline-item-left">
+            <div class="infographic-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="infographic-content">
+              <h3>Bachelors in JNTUA </h3>
+              <h4>Kurnool (IN), 2015-2019</h4>
+              <p>Acquired a robust foundation in engineering principles and communication technologies with a
+                specialization in Electronics and Communication Engineering.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
 
 
-    <div id="projects" class="container mt-5">
-      <h2 class="text-center mb-4">Featured Projects</h2>
+  </section>
+
+  <!-- Your Experience content here -->
+  <!-- Experience -->
+  <section id="experience">
+
+    <div id="experience" class="container mt-5">
+      <h2 class="text-center mb-4">Experience</h2>
       <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow project-card">
+            <img src="images/amazon.png" class="card-img-top" alt="Amazon Risk Investigation Platform">
+            <div class="card-body">
+              <h5 class="card-title">Amazon: Risk Investigation Platform</h5>
+              <div class="mt-3">
+                <i class="fab fa-angular skill-icon" style="color: #dd1b16;" title="Angular"></i>
+                <i class="fab fa-java skill-icon" style="color: #007396;" title="Java"></i>
+                <i class="fab fa-aws skill-icon" style="color: #FF9900;" title="AWS"></i>
+              </div>
+              <p class="card-text">Spearheaded the development of a fraud detection platform using Angular and Java.
+                Enhanced fraud detection speed by 40%.</p>
+              <div class="btn-container">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                  data-bs-target="#amazonModal">View
+                  Description</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="amazonModal" tabindex="-1" aria-labelledby="amazonModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="amazonModalLabel">Amazon: Risk Investigation Platform</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>The <strong>Amazon Risk Investigation Platform</strong> was designed to enhance fraud detection by
+                  40%,
+                  utilizing cutting-edge technologies and methodologies. My role included:</p>
+                <ul>
+                  <li><strong>Microservices Architecture:</strong> Designed and implemented Java-based microservices
+                    with
+                    Spring Boot on AWS, improving scalability and reducing latency.</li>
+                  <li><strong>Data Integration:</strong> Managed MongoDB and integrated Elasticsearch, optimizing query
+                    performance and search capabilities.</li>
+                  <li><strong>API Development:</strong> Developed RESTful APIs and utilized GraphQL to streamline data
+                    flow between services, enhancing security and scalability.</li>
+                  <li><strong>Leadership and Team Collaboration:</strong> Guided and motivated a team of developers and
+                    analysts, enhancing team collaboration and driving project success through effective leadership.
+                  </li>
+                  <li><strong>Analytical Thinking and Problem-Solving:</strong> Applied analytical skills to tackle
+                    complex problems, designing solutions that markedly improved fraud detection processes.</li>
+                </ul>
+                <div class="mt-3">
+                  <i class="fab fa-angular skill-icon" style="color: #dd1b16;" title="Angular"></i>
+                  <i class="fab fa-java skill-icon" style="color: #007396;" title="Java"></i>
+                  <i class="fab fa-aws skill-icon" style="color: #FF9900;" title="AWS"></i>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow project-card">
+            <img src="images/crashpad.png" class="card-img-top" alt="CrashPad Project">
+            <div class="card-body">
+              <h5 class="card-title">University Of Utah Capstone Project: CrashPad</h5>
+              <div class="mt-3">
+                <i class="fab fa-react skill-icon" style="color: #61DBFB;" title="React"></i>
+                <i class="fab fa-node-js skill-icon" style="color: #68A063;" title="Node.js"></i>
+                <i class="fab fa-google skill-icon" style="color: #4285F4;" title="Google Maps"></i>
+              </div>
+              <p class="card-text">Orchestrated a team to develop a platform connecting travelers with landowners for RV
+                parking akin to Airbnb.</p>
+              <div class="btn-container">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                  data-bs-target="#crashPadModal">View Description</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="crashPadModal" tabindex="-1" aria-labelledby="crashPadModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="crashPadModalLabel">University Of Utah Capstone Project: CrashPad</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>The <strong>CrashPad</strong> project was designed to connect travelers with landowners for RV
+                  parking,
+                  providing an Airbnb-like platform that simplifies finding and booking spaces. My contributions
+                  included:
+                </p>
+                <ul>
+                  <li><strong>Full-Stack Development:</strong> Spearheaded full-stack development using React, Node.js,
+                    and Java, integrating Google Maps and OAuth2 for enhanced UX and security.</li>
+                  <li><strong>Agile Project Management:</strong> Led the team using Agile methodologies, ensuring timely
+                    deliverables and effective project management.</li>
+                  <li><strong>CI/CD Implementation:</strong> Implemented a CI/CD pipeline for efficient deployment,
+                    ensuring the application met all functional and security standards before launch.</li>
+                </ul>
+                <div class="mt-3">
+                  <i class="fab fa-react skill-icon" style="color: #61DBFB;" title="React"></i>
+                  <i class="fab fa-node-js skill-icon" style="color: #68A063;" title="Node.js"></i>
+                  <i class="fab fa-google skill-icon" style="color: #4285F4;" title="Google Maps"></i>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
         <div class="col-md-6 col-lg-4">
           <div class="card shadow project-card">
             <img src="images/bosch.png" class="card-img-top" alt="Bosch Internship Project">
             <div class="card-body">
               <h5 class="card-title">Robert Bosch Student Intern</h5>
-              <p class="card-text">Contributed as a student intern on the NAL Captive Trajectory System project, gaining
+              <div class="mt-3">
+                <i class="fas fa-briefcase skill-icon" style="color: #28a745;" title="Professional Experience"></i>
+              </div>
+              <p class="card-text">Contributed as an assistant developer on the NAL Captive Trajectory System project,
+                gained
                 insights into the real-world software development lifecycle.</p>
               <div class="btn-container">
-                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#boschModal">
-                  View Description
-                </button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#boschModal">View
+                  Description</button>
               </div>
             </div>
           </div>
@@ -562,189 +421,36 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-md-6 col-lg-4">
-          <div class="card shadow project-card">
-            <img src="images/amazon.png" class="card-img-top" alt="Amazon Risk Investigation Platform">
-            <div class="card-body">
-              <h5 class="card-title"><a>Amazon: Risk Investigation Platform</a></h5>
-              <p class="card-text">Spearheaded the development of a fraud detection platform using Angular and Java.
-                Enhanced fraud detection speed by 40%.</p>
-              <div class="btn-container">
-                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#amazonModal">
-                  View Description
-                </button>
+  </section>
 
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="amazonModal" tabindex="-1" aria-labelledby="amazonModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="amazonModalLabel">mazon: Risk Investigation Platform</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <p>The <strong>Amazon Risk Investigation Platform</strong> was designed to enhance fraud detection by
-                  40%,
-                  utilizing cutting-edge technologies and methodologies. My role included:</p>
-                <ul>
-                  <li><strong>Microservices Architecture:</strong> Designed and implemented Java-based microservices
-                    with
-                    Spring Boot on AWS, improving scalability and reducing latency.</li>
-                  <li><strong>Data Integration:</strong> Managed MongoDB and integrated Elasticsearch, optimizing query
-                    performance and search capabilities.</li>
-                  <li><strong>API Development:</strong> Developed RESTful APIs and utilized GraphQL to streamline data
-                    flow
-                    between services, enhancing security and scalability.</li>
-                  <li><strong>Leadership and Team Collaboration:</strong> Guided and motivated a team of developers and
-                    analysts, enhancing team collaboration and driving project success through effective leadership.
-                  </li>
-                  <li><strong>Analytical Thinking and Problem-Solving:</strong> Applied analytical skills to tackle
-                    complex
-                    problems, designing solutions that markedly improved fraud detection processes.</li>
-                </ul>
-                <div class="mt-3">
-                  <i class="fab fa-angular skill-icon" style="color: #dd1b16;" title="Angular"></i>
-                  <i class="fab fa-java skill-icon" style="color: #007396;" title="Java"></i>
-                  <i class="fab fa-aws skill-icon" style="color: #FF9900;" title="AWS"></i>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card shadow project-card">
-            <img src="images/crashpad.png" class="card-img-top" alt="CrashPad Project">
-            <div class="card-body">
-              <h5 class="card-title"><a>University Of Utah
-                  Capstone Project: CrashPad</a></h5>
-              <p class="card-text">Orchestrated a team to develop a platform connecting travelers with landowners for RV
-                parking akin to Airbnb.</p>
-              <div class="btn-container">
-                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#crashPadModal">
-                  View Description
-                </button>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="crashPadModal" tabindex="-1" aria-labelledby="crashPadModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="crashPadModalLabel">University Of Utah Capstone Project: CrashPad</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <p>The <strong>CrashPad</strong> project was designed to connect travelers with landowners for RV
-                  parking,
-                  providing an Airbnb-like platform that simplifies finding and booking spaces. My contributions
-                  included:
-                </p>
-                <ul>
-                  <li><strong>Full-Stack Development:</strong> Spearheaded full-stack development using React, Node.js,
-                    and
-                    Java, integrating Google Maps and OAuth2 for enhanced UX and security.</li>
-                  <li><strong>Agile Project Management:</strong> Led the team using Agile methodologies, ensuring timely
-                    deliverables and effective project management.</li>
-                  <li><strong>CI/CD Implementation:</strong> Implemented a CI/CD pipeline for efficient deployment,
-                    ensuring
-                    the application met all functional and security standards before launch.</li>
-                </ul>
-                <div class="mt-3">
-                  <i class="fab fa-react skill-icon" style="color: #61DBFB;" title="React"></i>
-                  <i class="fab fa-node-js skill-icon" style="color: #68A063;" title="Node.js"></i>
-                  <i class="fab fa-google skill-icon" style="color: #4285F4;" title="Google Maps"></i>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card shadow project-card">
-            <img src="images/domo.png" class="card-img-top" alt="Domo Layton Hackathon">
-            <div class="card-body">
-              <h5 class="card-title"><a
-                  href="https://eccles.utah.edu/news/innovating-the-future-recap-of-the-annual-domo-layton-construction-data-analytics-hackathon/"
-                  target="_blank">Domo Layton Hackathon Winners</a></h5>
-              <p class="card-text">Secured a second-place finish transforming raw data into insightful HR analytics
-                dashboards.</p>
-              <div class="btn-container">
-                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#domoModal">
-                  View Description
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="domoModal" tabindex="-1" aria-labelledby="domoModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="domoModalLabel">Domo Layton Hackathon Winners</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <p>During the <strong>Domo Layton Hackathon</strong>, our team focused on utilizing Domo to transform
-                  complex HR data into actionable insights. Here's how I contributed:</p>
-                <ul>
-                  <li><strong>Data Visualization:</strong> Created dynamic dashboards that provide real-time insights
-                    into
-                    workforce metrics, helping managers make informed decisions.</li>
-                  <li><strong>Analytics Implementation:</strong> Demonstrated my ability to manipulate and visualize
-                    complex datasets using Domo.</li>
-                  <li><strong>Innovative Approach:</strong> Highlighted my innovative approach to data-driven
-                    decision-making
-                    in a corporate setting, setting new standards for operational efficiency and strategic planning in
-                    human
-                    resources</li>
-                </ul>
-                <div class="mt-3">
-                  <i class="fab fa-domo skill-icon" style="color: #E60012;" title="Domo"></i>
-                  <i class="fas fa-chart-line skill-icon" style="color: #28a745;" title="Data Visualization"></i>
-                  <i class="fas fa-database skill-icon" style="color: #f0db4f;" title="Database"></i>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
+  <!-- Projects -->
+  <section id="projects">
+    <!-- Your Projects content here -->
+    <div id="projects" class="container mt-5">
+      <h2 class="text-center mb-4">Projects</h2>
+      <div class="row g-4">
         <div class="col-md-6 col-lg-4">
           <div class="card shadow project-card">
             <img src="images/suburban.png" class="card-img-top" alt="SubUrban Outfitters">
             <div class="card-body">
-              <h5 class="card-title"><a href="https://thesuburbanoutfitters.com/" target="_blank">SubUrban Outfitters
-                  (E-commerce)</a></h5>
+              <h5 class="card-title">SubUrban Outfitters
+                (E-commerce)</h5>
+              <div class="mt-3">
+                <i class="fab fa-html5 skill-icon" style="color: #e34c26;" title="HTML5"></i>
+                <i class="fab fa-css3-alt skill-icon" style="color: #264de4;" title="CSS3"></i>
+                <i class="fab fa-js-square skill-icon" style="color: #f0db4f;" title="JavaScript"></i>
+                <i class="fab fa-php skill-icon" style="color: #777bb4;" title="PHP"></i>
+              </div>
               <p class="card-text">Led the development of SubUrban Outfitters, an e-commerce platform enhancing the
                 retail
                 experience through advanced web technologies.</p>
               <div class="btn-container">
-                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#suburbanModal">
-                  View Description
-                </button>
-                <a href="https://github.com/AkeshBabu/suburban-outfitters" target="_blank" class="btn btn-github">
-                  <i class="fab fa-github"></i>
-                </a>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                  data-bs-target="#suburbanModal">View Description</button>
+                <a href="https://github.com/AkeshBabu/suburban-outfitters" target="_blank" class="btn btn-github"><i
+                    class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -755,7 +461,11 @@
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="suburbanModalLabel">SubUrban Outfitters (E-commerce)</h5>
+                <h5 class="modal-title" id="suburbanModalLabel"> SubUrban Outfitters
+                  (E-commerce) </h5>
+                <h5 class="modal-title" id="utaModalLabel">Transit Tracker: Reverse Engineering</h5>
+
+
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -765,7 +475,8 @@
                 <ul>
                   <li><strong>Full Stack Development:</strong> Utilized HTML, CSS, JavaScript, and PHP to build a
                     responsive and dynamic online store.</li>
-                  <li><strong>Real-Time Data Handling:</strong> Implemented features for real-time product tracking and
+                  <li><strong>Real-Time Data Handling:</strong> Implemented features for real-time product tracking
+                    and
                     customer interactions, enhancing user engagement and satisfaction.</li>
                   <li><strong>UI/UX Design:</strong> Focused on delivering an intuitive design that simplifies
                     navigation
@@ -789,16 +500,19 @@
           <div class="card shadow project-card">
             <img src="images/transit.png" class="card-img-top" alt="UTA Transit Tracker">
             <div class="card-body">
-              <h5 class="card-title"><a>Transit Tracker: Reverse Enginnering</a></h5>
+              <h5 class="card-title">Transit Tracker: Reverse Engineering</h5>
+              <div class="mt-3">
+                <i class="fas fa-database skill-icon" style="color: #00758f;" title="Database"></i>
+                <i class="fab fa-microsoft skill-icon" style="color: #737373;" title="Azure SQL"></i>
+                <i class="fas fa-project-diagram skill-icon" style="color: #ff9900;" title="ERD"></i>
+              </div>
               <p class="card-text">Analyzed and reverse-engineered the UTA Transit Tracker app's database as part of a
                 class project, focusing on database optimization and system analysis.</p>
               <div class="btn-container">
-                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#utaModal">
-                  View Description
-                </button>
-                <a href="https://github.com/AkeshBabu/Transit-Tracker" target="_blank" class="btn btn-github">
-                  <i class="fab fa-github"></i>
-                </a>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#utaModal">View
+                  Description</button>
+                <a href="https://github.com/AkeshBabu/Transit-Tracker" target="_blank" class="btn btn-github"><i
+                    class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -808,7 +522,7 @@
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="utaModalLabel">Transit Tracker: Reverse Enginnering</h5>
+                <h5 class="modal-title" id="utaModalLabel">Transit Tracker: Reverse Engineering</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -817,7 +531,8 @@
                   role involved collaboratively reverse engineering the existing system to enhance data management and
                   efficiency:</p>
                 <ul>
-                  <li><strong>Database Reverse Engineering:</strong> Performed an in-depth analysis of the existing SQL
+                  <li><strong>Database Reverse Engineering:</strong> Performed an in-depth analysis of the existing
+                    SQL
                     database structure, identifying inefficiencies and areas for improvement in data management and
                     system
                     performance.</li>
@@ -848,19 +563,20 @@
           <div class="card shadow project-card">
             <img src="images/GenAI.png" class="card-img-top" alt="Generative AI Hackathon">
             <div class="card-body">
-              <h5 class="card-title"><a href="https://github.com/AkeshBabu/Generative-AI-chatGPT-Hackathon"
+              <h5 class="card-title"><a href="https://eccles.utah.edu/programs/undergraduate/generative-ai-hackathon/"
                   target="_blank">Generative AI (ChatGPT) Hackathon</a></h5>
+              <div class="mt-3">
+                <i class="fab fa-python skill-icon" style="color: #3776AB;" title="Python"></i>
+                <i class="fas fa-robot skill-icon" style="color: #7289da;" title="AI"></i>
+                <i class="fas fa-keyboard skill-icon" style="color: #0073b1;" title="Data Analysis"></i>
+              </div>
               <p class="card-text">Contributed to a generative AI project aimed at transforming patient feedback into
-                actionable insights to improve healthcare experiences.
-              </p>
+                actionable insights to improve healthcare experiences.</p>
               <div class="btn-container">
-                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#aiModal">
-                  View Description
-                </button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#aiModal">View
+                  Description</button>
                 <a href="https://github.com/AkeshBabu/Generative-AI-chatGPT-Hackathon" target="_blank"
-                  class="btn btn-github">
-                  <i class="fab fa-github"></i>
-                </a>
+                  class="btn btn-github"><i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -876,7 +592,8 @@
               <div class="modal-body">
                 <p>The <strong>Generative AI Hackathon</strong> project involved analyzing extensive patient feedback
                   data
-                  from a clinic to enhance service quality and patient care. The project focused on leveraging advanced
+                  from a clinic to enhance service quality and patient care. The project focused on leveraging
+                  advanced
                   AI
                   techniques to understand and improve the patient experience:</p>
                 <ul>
@@ -891,7 +608,8 @@
                     specific areas of patient concern or appreciation, providing insights into aspects that
                     significantly
                     impact patient satisfaction.</li>
-                  <li><strong>Feedback Analysis:</strong> Analyzed specific feedback related to various service elements
+                  <li><strong>Feedback Analysis:</strong> Analyzed specific feedback related to various service
+                    elements
                     such as staff interactions and clinic facilities, enabling targeted improvements.</li>
                   <li><strong>Actionable Recommendations:</strong> Formulated recommendations based on the analysis to
                     address key areas for improvement, such as enhancing communication skills of staff and upgrading
@@ -912,20 +630,78 @@
 
         <div class="col-md-6 col-lg-4">
           <div class="card shadow project-card">
+            <img src="images/domo.png" class="card-img-top" alt="Domo Layton Hackathon">
+            <div class="card-body">
+              <h5 class="card-title"><a
+                  href="https://eccles.utah.edu/news/innovating-the-future-recap-of-the-annual-domo-layton-construction-data-analytics-hackathon/"
+                  target="_blank">Domo Layton Hackathon Winners</a></h5>
+              <div class="mt-3">
+                <i class="fab fa-domo skill-icon" style="color: #E60012;" title="Domo"></i>
+                <i class="fas fa-chart-line skill-icon" style="color: #28a745;" title="Data Visualization"></i>
+                <i class="fas fa-database skill-icon" style="color: #f0db4f;" title="Database"></i>
+              </div>
+              <p class="card-text">Secured a second-place finish transforming raw data into insightful HR analytics
+                dashboards.</p>
+              <div class="btn-container">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#domoModal">View
+                  Description</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="domoModal" tabindex="-1" aria-labelledby="domoModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="domoModalLabel">Domo Layton Hackathon Winners</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>During the <strong>Domo Layton Hackathon</strong>, our team focused on utilizing Domo to transform
+                  complex HR data into actionable insights. Here's how I contributed:</p>
+                <ul>
+                  <li><strong>Data Visualization:</strong> Created dynamic dashboards that provide real-time insights
+                    into
+                    workforce metrics, helping managers make informed decisions.</li>
+                  <li><strong>Analytics Implementation:</strong> Demonstrated my ability to manipulate and visualize
+                    complex datasets using Domo.</li>
+                  <li><strong>Innovative Approach:</strong> Highlighted my innovative approach to data-driven
+                    decision-making in a corporate setting, setting new standards for operational efficiency and
+                    strategic
+                    planning in human resources</li>
+                </ul>
+                <div class="mt-3">
+                  <i class="fab fa-domo skill-icon" style="color: #E60012;" title="Domo"></i>
+                  <i class="fas fa-chart-line skill-icon" style="color: #28a745;" title="Data Visualization"></i>
+                  <i class="fas fa-database skill-icon" style="color: #f0db4f;" title="Database"></i>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow project-card">
             <img src="images/minesweeper.png" class="card-img-top" alt="Minesweeper Game">
             <div class="card-body">
-              <h5 class="card-title"><a>Minesweeper
-                  Game Development</a></h5>
-              <p class="card-text">Developed a Minesweeper game from scratch, showcasing my skills in complex algorithm
+              <h5 class="card-title">Minesweeper Game Development</h5>
+              <div class="mt-3">
+                <i class="fab fa-java skill-icon" style="color: #007396;" title="Java"></i>
+                <i class="fas fa-gamepad skill-icon" style="color: #ffcc00;" title="Game Development"></i>
+                <i class="fas fa-cogs skill-icon" style="color: #3b5998;" title="Algorithms"></i>
+              </div>
+              <p class="card-text">Developed a Minesweeper game from scratch, showcasing my skills in complex
+                algorithm
                 implementation and design.</p>
               <div class="btn-container">
                 <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                  data-bs-target="#minesweeperModal">
-                  View Description
-                </button>
-                <a href="https://github.com/AkeshBabu/MineSweeperGame" target="_blank" class="btn btn-github">
-                  <i class="fab fa-github"></i>
-                </a>
+                  data-bs-target="#minesweeperModal">View Description</button>
+                <a href="https://github.com/AkeshBabu/MineSweeperGame" target="_blank" class="btn btn-github"><i
+                    class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -941,15 +717,18 @@
               </div>
               <div class="modal-body">
                 <p>The development of a <strong>Minesweeper</strong> game was a personal project to refine my
-                  programming skills. Key aspects of the project included:</p>
+                  programming
+                  skills. Key aspects of the project included:</p>
                 <ul>
-                  <li><strong>Algorithm Development:</strong> Crafted complex algorithms to handle game logic and ensure
+                  <li><strong>Algorithm Development:</strong> Crafted complex algorithms to handle game logic and
+                    ensure
                     accurate mine placement and detection.</li>
-                  <li><strong>My Experience:</strong> The successful implementation of the game provided a
-                    fun and engaging user experience and underscored my capabilities in algorithmic thinking and
-                    application development.</li>
+                  <li><strong>My Experience:</strong> The successful implementation of the game provided a fun and
+                    engaging user experience and underscored my capabilities in algorithmic thinking and application
+                    development.</li>
                   <li><strong>Problem Solving:</strong> Addressed common gameplay challenges by implementing advanced
-                    data structures, improving game efficiency and performance.</li>
+                    data
+                    structures, improving game efficiency and performance.</li>
                 </ul>
                 <div class="mt-3">
                   <i class="fab fa-java skill-icon" style="color: #007396;" title="Java"></i>
@@ -968,18 +747,20 @@
           <div class="card shadow project-card">
             <img src="images/click.png" class="card-img-top" alt="Click Quest Game">
             <div class="card-body">
-              <h5 class="card-title"><a>Click Quest Game
-                  using Java</a></h5>
-              <p class="card-text">Developed an interactive point-and-click adventure game, enriching my portfolio with
+              <h5 class="card-title">Click Quest Game using Java</h5>
+              <div class="mt-3">
+                <i class="fab fa-java skill-icon" style="color: #007396;" title="Java"></i>
+                <i class="fas fa-mouse-pointer skill-icon" style="color: #f39c12;" title="Interactive Design"></i>
+                <i class="fas fa-laptop-code skill-icon" style="color: #3498db;" title="GUI Development"></i>
+              </div>
+              <p class="card-text">Developed an interactive point-and-click adventure game, enriching my portfolio
+                with
                 advanced Java programming and interactive storytelling.</p>
               <div class="btn-container">
                 <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                  data-bs-target="#clickQuestModal">
-                  View Description
-                </button>
-                <a href="https://github.com/AkeshBabu/ClickQuest" target="_blank" class="btn btn-github">
-                  <i class="fab fa-github"></i>
-                </a>
+                  data-bs-target="#clickQuestModal">View Description</button>
+                <a href="https://github.com/AkeshBabu/ClickQuest" target="_blank" class="btn btn-github"><i
+                    class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -994,12 +775,15 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <p>The <strong>Click Quest</strong> project was an exploration into interactive game design using Java.
-                  It involved:</p>
+                <p>The <strong>Click Quest</strong> project was an exploration into interactive game design using
+                  Java.
+                  It
+                  involved:</p>
                 <ul>
                   <li><strong>Interactive Design:</strong> Built engaging game mechanics and narratives that encourage
                     user interaction and prolonged engagement.</li>
-                  <li><strong>Java GUI Development:</strong> Utilized Swing and AWT for the game's interface, creating a
+                  <li><strong>Java GUI Development:</strong> Utilized Swing and AWT for the game's interface, creating
+                    a
                     visually appealing and user-friendly environment.</li>
                   <li><strong>Custom Class Development:</strong> Developed custom classes for characters, puzzles, and
                     environments, enhancing the game's complexity and appeal.</li>
@@ -1017,24 +801,122 @@
           </div>
         </div>
 
+
+        <!-- Linux MiniShell Project -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow project-card">
+            <img src="images/shellscripting.png" class="card-img-top" alt="Linux MiniShell">
+            <div class="card-body">
+              <h5 class="card-title">Linux MiniShell</h5>
+              <div class="mt-3">
+                <i class="fas fa-terminal skill-icon" style="color: #4db8ff;" title="Shell Programming"></i>
+                <i class="fab fa-linux skill-icon" style="color: #fcc624;" title="Linux"></i>
+                <i class="fas fa-cogs skill-icon" style="color: #3498db;" title="System Programming"></i>
+              </div>
+              <p class="card-text">A mini shell program implemented in C that supports various Unix commands, piping,
+                and redirection. Developed to understand the workings of a command-line interface.</p>
+              <div class="btn-container">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                  data-bs-target="#linuxMiniShellModal">View Description</button>
+                <a href="https://github.com/AkeshBabu/Linux_MiniShell" target="_blank" class="btn btn-github"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for Linux MiniShell -->
+        <div class="modal fade" id="linuxMiniShellModal" tabindex="-1" aria-labelledby="linuxMiniShellModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="linuxMiniShellModalLabel">Linux MiniShell</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>The <strong>Linux MiniShell</strong> project is a lightweight command-line interface built in C. It
+                  supports essential Unix commands and advanced features like piping and redirection. The project was
+                  developed to deepen understanding of system-level programming and the internals of shell operations.
+                </p>
+                <ul>
+                  <li><strong>Shell Programming:</strong> Implemented core Unix commands and built a custom shell
+                    environment.</li>
+                  <li><strong>Linux Systems:</strong> Utilized various Linux system calls and libraries to handle
+                    command execution and process management.</li>
+                  <li><strong>Advanced Features:</strong> Supports command chaining using pipes and handles input/output
+                    redirection effectively.</li>
+                </ul>
+                <div class="mt-3">
+                  <i class="fas fa-terminal skill-icon" style="color: #4db8ff;" title="Shell Programming"></i>
+                  <i class="fab fa-linux skill-icon" style="color: #fcc624;" title="Linux"></i>
+                  <i class="fas fa-cogs skill-icon" style="color: #3498db;" title="System Programming"></i>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="https://github.com/AkeshBabu/Linux_MiniShell" target="_blank" class="btn btn-github"><i
+                    class="fab fa-github"></i> View on GitHub</a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
+  </section>
 
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <div id="contact" class="container mt-5">
+      <h2 class="text-center mb-4">Connect More?</h2>
+      <p class="text-center">I'd love to hear from you! Whether it's feedback, suggestions, or just a hello, drop me a
+        message and I'll get back to you as soon as possible.</p>
+      <form id="contact-form" class="text-center">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Thank You -->
     <div id="thankyou" class="container mt-5">
       <h2 class="text-center mb-4">Thank You</h2>
       <p class="text-center">Thank you for visiting my portfolio. I hope you enjoyed learning about my journey and
         projects. Feel free to connect with me on LinkedIn or GitHub. I look forward to collaborating and creating
         innovative solutions together!</p>
+      <div class="text-center">
+        <a href="https://linkedin.com/in/akeshbabu" target="_blank" class="btn btn-linkedin"><i
+            class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="/documents/AkeshAnumalasettyResume.pdf" target="_blank" class="btn btn-resume">View Resume</a>
+      </div>
     </div>
 
-    <footer class="bg-light text-muted">
+    <!-- Footer -->
+    <footer class="footer">
       <div class="container py-3">
         <p>© 2024 Akesh Anumalasetty. All Rights Reserved.</p>
       </div>
     </footer>
 
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+
 </body>
 
 </html>
